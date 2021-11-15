@@ -39,13 +39,13 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
-        <div id="topnav" class="row bg-black text-white pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+        <div id="topnav" class="row bg-black text-white pt-lg-2">
+            <div class="col-12 col-lg-4 my-auto py-0 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-uppercase logo-font-1 text-light my-0">Chunky <span class="logo-font-2">Funky</span><span class="logo-font-3"> Furniture</span></h2>
                 </a>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 d-none d-lg-block">
                 <form method="GET" action="">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
@@ -59,7 +59,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 d-none d-lg-block">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
                         <a class="text-white nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -97,6 +97,17 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div> 
+        </div>
+        <div class="row bg-black">
+            <nav class="navbar navbar-expand-lg w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="nav-tog-1" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#fff"></i></span>
+                </button>
+                
+                {% include 'includes/mobile-top-header.html' %}
+                {% include 'includes/main-nav.html' %}
+            </nav>
         </div>
     </header>
 
@@ -109,9 +120,10 @@
 
     {% block content %}
     {% endblock %}
-
-    {% include "about.html" %}
-    {% include "footer.html" %}
+    
+    <footer>
+    {% include "includes/footer.html" %}
+    </footer>
     
     {% block postloadjs %}
     {% endblock %}

@@ -8,7 +8,6 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';   
-    font-size: 10px;
 }
 
 /* from Bulma */
@@ -21,6 +20,7 @@ body {
 }
 
 /* logo styling */
+
 .logo-uppercase {
     text-transform: uppercase;
 }
@@ -68,6 +68,18 @@ body {
 
 /* various  */
 
+.nav-tog-1 .fa {
+    position: relative;
+    font-size: 30px;
+    top: -8px;
+}
+
+#main-nav a {
+    font-size: 0.8rem !important;
+}
+
+
+
 .text-black {
     color: #000 !important;
 }
@@ -94,20 +106,26 @@ body {
 }
 
 /*--------------------------------Footer---------------------*/
+.footer-style {
 
-
-.footer-bg {
-    background-color: black;
-    height: 10vh;
-    position: relative;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Lato';   
+    background: #000;
+    color: white;
+    font-size: 0.8rem;
 }
 
-.fab {
+
+.social-link, .fab {
     padding: 7px 12px;
     font-size: 20px;
     text-align: center;
     text-decoration: none;
-    border-radius: 15%;
+    
 }
 
 .fab:hover {
@@ -116,7 +134,7 @@ body {
 
 .footer-icons {
     left: -10px;
-    top: 3vh;
+   
 }
 
 .fa-facebook-f {
@@ -160,5 +178,21 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+
+    #main-nav a {
+        font-size: 1.1rem !important;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .list-inline-item {
+        font-size: 0.8rem;
+    }
+    .nav-link {
+        padding: 0.5rem;
+    }
+    .mobile-dropdown {
+        font-size: 0.8rem;
     }
 }
