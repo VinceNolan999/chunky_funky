@@ -15,10 +15,15 @@
             <div class="col-7 col-md-6 my-auto">
                 <div class="my-5">
                     <h4>
-                        <a href="" class="border border-white shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                        <a href="{% url 'products' %}" class="border border-white shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Goto Shop</a>
                     </h4>
                 </div>
             </div>
         </div>
     </div>
+
+    <footer>
+        {% include "includes/footer.html" %}
+    </footer>
 {% endblock %}
+

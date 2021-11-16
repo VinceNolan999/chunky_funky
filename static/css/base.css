@@ -181,7 +181,7 @@ body {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 165px;
     }
 
     #main-nav a {
@@ -189,7 +189,7 @@ body {
     }
 }
 
-@media (max-width: 575.98px) { 
+@media (max-width: 991px) { 
     .list-inline-item {
         font-size: 0.8rem;
     }
@@ -198,5 +198,12 @@ body {
     }
     .mobile-dropdown {
         font-size: 0.8rem;
+    }
+    .header-container {
+        padding-top: 194px;
+    }
+
+    body {
+        height: calc(100vh - 194px);
     }
 }
