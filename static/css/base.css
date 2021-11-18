@@ -177,6 +177,12 @@ body {
     color: white !important;
 }
 
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 
 
 /* -------------------------------- Media Queries */
