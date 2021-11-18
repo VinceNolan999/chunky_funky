@@ -96,6 +96,11 @@ body {
     font-size: 1rem;
 }
 
+/* products sorted link */
+.small a {
+    color: #000 !important;
+}
+
 /*--------------------------------Footer---------------------*/
 .footer-style {
 
@@ -157,6 +162,19 @@ body {
     position: fixed;
     background: #fff;
     z-index: -1;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
 }
 
 
