@@ -4,7 +4,7 @@ Creates views for checkout app
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 
-from .form import OrderForm
+from .forms import OrderForm
 
 
 def checkout(request):
