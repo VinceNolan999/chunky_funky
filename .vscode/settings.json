@@ -28,13 +28,20 @@
       "alluth",
       "autohide",
       "Bootcut",
+      "color",
       "corecss",
       "corejs",
       "csrfmiddlewaretoken",
+      "Element",
       "fapjdg",
+      "fieldset",
+      "label",
       "nfld",
+      "placeholder",
       "postloadjs",
       "SIGNUP",
+      "Stripe",
+      "style",
       "vuhi"
    ]
 }
