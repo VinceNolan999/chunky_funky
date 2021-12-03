@@ -1,0 +1,1 @@
+web: gunicorn chunky_funky.wsgi:application
