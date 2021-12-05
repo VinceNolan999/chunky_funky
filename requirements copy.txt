@@ -14,4 +14,4 @@ stripe==2.63.0
 dj-database-url==0.5.0
 psycopg2-binary==2.9.2
 gunicorn==20.1.0
-boto3
+boto3==1.20.20
