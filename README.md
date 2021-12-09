@@ -36,72 +36,72 @@
   
  #### New user Goals
 
-- To create an account that enable the user to login and to logout when finished.
+- To create an account that enable the user to login and to logout.
 
-- User registration allows further access to the database. Such as Edit and delete movies.
+- 
 
 - To show A user profile that matches the registration details.
 
-- To see a list of movies stored on the database and relevant information about the movie.
+- 
 
-- To search for movies by name or movie description
+- 
 
-- To add new movies to database
+- 
 
-- To edit movies on the database
+- 
 
-- To delete Movies on the database
+- 
  
 
 #### Returning User Goals
 
-- To view, edit and delete movies on the database 
+-  
 
-- To search for movies by name or movie description
+- 
 
 ### User Stories
 
 #### As A New user.
 
-- I want to be able to create a user account that allows further access
+- 
 
 - I want to be able to log in and log out having a unique user account and password known only to me. 
 
-- I want to see Information about movies that are on the database
+- 
  
-- I want to be able to add and edit movies on the database which records my user details within the database
+- 
 
-- I want to be able to delete movies from the database
+- 
 
-- I want to be able to tag a movie that I would like and that shows in a separate search.
+- 
 
 #### As A returning user.
 
 - I want to be able to log in and log out using a unique user account and password created by myself
 
-- I want to edit and add movies and have that action attributed to my account.
+- 
 
-- I want to be able to delete movies from the database
+- 
 
-- I want to be able to search the database for movies
+- 
 
-- I want to be able to flag movies that I would like to have.
+- 
 
 #### Admin Owner Goals
 
-- To create a website that users can access a catalog of Movies that they own or that they would like to own or watch.
+- 
 
 - Each user to have a unique login and secure password only known to them.
 
 - ability for users to log out of the account.
 
-- Tasks such as editing and adding movies should display the users details.
+- 
 
-- deleting movies should require a conformationally request to prevent accidental deletion.
+- 
 
-- users should be able to search for movies, this to be by movie name, description, genre type or by 'wish list'
+- 
 
-- A function that allows users to flag a movie that they would like to watch/own.  A Wish list.
+- 
 
 - A Profile section for the user to verify there details.
 
@@ -118,67 +118,68 @@
 ---
 ## <u>Features</u>
 
-- This website will consist of of a landing page that has view only access to the displayed movie tiles And a limited navigation bar with the option to login or register.. 
+-  
 
- The search and genre select button should be accessible for all. Once a user is registered and logged in, other feature became available. Further Navigation links are present for 'Profile' and 'Add Movie'. In addition the login button is replaced with a log out button.  Ae search bar to search by movie name or movie description present in addition to Select movies by genre. The Film tiles will also contain an edit button that allows editing of the movie details, adding and editing movies will attribute to the user details. Users can also delete the movie within the edit function.  Pressing the button will require a confirmation click to delete to help prevent accidental deletions. 
+- 
+- 
+- 
 
-- A basic profile page confirming the username and associated email address which is required upon registration. 
-
-- Add movie section that reveals form category's for the user to complete which are relevant to the movie. The section of Genre, format and age rating are all dropdown selection boxes, however the options from these are gathered from the the database in linked librarys. All options are self explanatory. The URL option at the bottom is pre filled with an example HTML.  IF user has no film specific URL this can be left as is and submitted.  A wishlist toggle button at the bottom that adds a further field for displaying movies the users may want.  Buttons present that cancels the form (redirect back to home screen), clears the form and Adds the movie.
-
-- Log out tab.   Clears the users session cookie 
-
-- On admin login a final navigation tab available of Categories. This allows the admin to create, edit or delete genre categories. 
+- 
 
 #### Fonts
 
-- The main font used is 'DM sans' with back-up of  sans-serif  obtained from [Google-fonts](www.fonts.google.com)
+- The main font used is 'lato'  [Google-fonts](www.fonts.google.com)
+   - Logo fonts of Bunge and  Monoton used. (also google fonts)
 
 #### Images
 
-- URL links to images displayed on the Movie tiles.
+- URL links to images displayed on the product page.
 
-- Movie 'clapper' image found on google search.  No obvious credit source stated.
+- Background Image of main landing page
 
 #### Navbar and footer
 
 - low profile navigation bar and footer
 
-- Navbar located at top with brand name to the left and a responsive menu on the right. For Mobile and tablet this is 
-  an expanding 'Hamburger' menu opening below the icon to reveal  menus of Home and Login/register.
-
-    - when logged in as User additional options of Profile and Add movie present.
-
-    - when logged in as Admin, additional option of Categories revealed.
-
+- Navbar located at top with brand name to the left and a responsive menu on the right for the account section.
+    - When not logged in it displays the options of Login and Register. 
+    - Logged in for a user will show options of profile and Logout. 
+    - Logged in as a superuser will reveal the product management setion that allows the adding of products.
     - Logging in Removes login/register and replaces with logout.
-    
-- Footer is located at the bottom and displays copyright label.
+- Shopping bag and Value Link (if applicable) - Links to Users shopping Bag.
+
+#### Search section
+
+- A selection of Buttons allowing searches by product type, split into two main categories of Indoors and Outdoors furniture (each has there own product category types revealed within). An all products link which can sort the products by Price, Rating and Category.
+
+- A search bar allowing searches by Product name or description text.
+
+- On mobile view the search categories are available as a Hamburger Drop down menu
+
+- Footers located at the bottom with placeholder links to social media sites. In addition there is a section about the company.
 
 #### Hero Image
 
-- Fixed image of a film reel slide.
+- Fixed image wood workshop.
 
-#### Flash Message display area. 
+#### Toast Message display area. 
 
-- Below the footer, a flash message will appear for the following actions.
+- To the right, a toast message will appear for the following actions.
 
-    - Registering A user account.
-    - Incorrect password/username
-    - add/edit/delete Movie
-    - add/edit/delete Genre
-
-#### Main Movie search section
-
-- A selection of Buttons allowing searches by genre type. 
-
-- A search bar allowing searches by movie name or description text.
-
-- Movie display tiles 
+    - 
+    - 
+    - 
+    - 
 
 #### Profile Page
 
--  Basic profile page displaying the username and email address of the user.
+-  Profile page displaying the username and delivery address details of the user. The address is displayed as a form and can be edited and updated. Username cannot be changed.  In addition the profile page displays the users previous orders,  this links to the order which contains information to that order including, date, product purchased , delivery address and Grand total.  A toast is also shown scecifying that this is a previous purchase made.
+
+#### Product Page
+
+#### Shopping Bag
+
+#### Checkout Section
 
 ### Existing Features
 
@@ -186,24 +187,15 @@
 
 - password validation on registration form. 
 
-- movie cards that are stored on a database and accessible to the user. 
+- Customer orders and delivery details that are stored on a database and accessible to the user. 
 
-- ability to add, edit and delete Movie details. 
+- Superuser able to add new products to the database
 
 #### Future Features 
 
-- Deleted movies to remain on database but removed from users view. Admin section to re-instated deleted movies or permanent delete.
-
-- Link in movie cards that can direct a user to a purchase of that movie, potential to earn money via referrals.
-
-- registration to capture more details from the user, eg, name, address etc.  This will be displayed on the profile page. In addition the profile page
-  will have options for the user to update there information and/or delete the account.
-
-- Ability for admin to remove users ability to add/edit or delete movies based only on user details. 
-
-- Various levels of users which opens up more access.  At present only 2 levels. User or admin.  example could be only allowed to edit/delete there own movies. 
+- Facility for users to log in via existing social media accounts. 
   
-- Movie rating display. 
+- 
 
 [Back to Table of contents](#table-of-contents)
 
@@ -211,13 +203,13 @@
 ## <u>Technology Used</u>
 
 
-* [MongoDB](https://www.mongodb.com/)
+* [Django](https://www.djangoproject.com/)
 
-  - A source-available cross-platform document-oriented database program
+  - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design
 
-* [Flask](https://flask.palletsprojects.com)
+* [Amazon S3 via AWS](https://aws.amazon.com/)
   
-  - Web framework written in Python
+  -  Object storage built to store and retrieve any amount of data from anywhere
 
 * [Heroku](https://www.heroku.com/)
 
@@ -249,7 +241,7 @@
 
   - Used to import custom fonts
 
-* [Google Icons:](https://fonts.google.com/icons) 
+* [Icons:](https://fontawesome.com/) 
 
   - Used to import icons
 
@@ -260,11 +252,7 @@
 * [Gitpod:](https://www.gitpod.io.com)
 
    - Used to develop the project, including version control (using commits and comments.)
-
-* [MaterializeCSS:](https://materializecss.com)
-
-  - Used to assist in a responsive site with a mobile first approach. 
-
+ 
 * [windows Photo editor](https://www.microsoft.com/en-us/p/photo-editor-for-windows-10/9mzwk7vt6b3g?activetab=pivot:overviewtab)
 
    - Basic photo editor
@@ -293,10 +281,14 @@ Continuous ongoing testing during development to ensure functions working correc
   - Search bar correctly display the movies by name or by movie description. 
   - Search and Reset button working as intended.
 
-- Movie cards
+- Product categorys
   - displayed as inteneded. Pressing the card reveals information about the movie.  Movies without a correct Url image link display a stock
     placeholder image.
   - No access to edit facility
+
+  - Shopping Bag
+
+  - Checkout 
 
 ### User Logged In  
 
@@ -307,64 +299,33 @@ Continuous ongoing testing during development to ensure functions working correc
   - Menu options goto the correct page.
   - Log Out works correctly.  Only options of home and Log in present, no ability to edit movies.
 
+- Shopping Bag
+
 - Search Section
   - all genre select buttons and the Wishlist button displaying the correct movie from the movie card details.
   - Search bar correctly display the movies by name or by movie description. 
   - Search and Reset button working as intended.
 
-- Movie cards
+- Product Categorys
   - displayed as inteneded. Pressing the card reveals information about the film.  Films without a correct Url image link display a stock
     placeholder image.
   - access to edit facility. pressing the edit button takes you to the correct edit screen for the movie.
 
-- Edit Section
-  - Correct details displayed for the selected movie to edit.
-  - All options edited to test the information is changed, works as intended.
-  - wish list toggle works.
-  - Delete button brings up a confirmation button (cancel or delete). Cancel reverts back to edit screen and delete correctly deletes the movie.
-  - Go back takes you back to the home page.
-  - Edit button updates changes to movie information. 
-
 - Profile Section.
-  - pressing takes you to the profile page, displaying username and email.
-
-- Add movie section
-  - Shows a blank form with fields to complete. 
-  - genre, format and age rating are all option boxes which relate to the MongoDB collections.
-  - release date reveals a calender page for selection.
-  - Placeholder upl present.
-  - wishlist toggle working correctly.
-  - Form validation working correctly. Red lines under fields not entered, green when completed. 
-  - Cancel button redirects back to home page.
-  - Clear button, clears the form.
-  - Add Movie creates a new card with the information entered and user taken to Home page.
-  - flash message displayed correctly.
-  - Have verified that the correct movie information is present. In addition the 'Created by' is showing the username.
-  
+  - pressing takes you to the profile page, displaying username 
 
 - Log out
   - session cookie is removed. No access to other features.
-  - flash message confirming 'you are now logged out'
+  - toast message confirming 'you are now logged out'
 
 ### Admin Logged In 
 
-- All above tests completed and work as intended.
-- Additional Menu Item present of 'Categories'
+- 
 
-- Categories.
-  - Opens up a page which shows the Genres.
-  - Add genre reveals new page to input a genre name. 
-  - Cancel redirects to main genre page
-  - clear, clears the form.
-  - Add Genre, when adding new genre,. page redirected to genres page. New genre is displayed.  
-  - Flash message 'New genre added' present
-  - Checking the main Home page the new genre is now included in the Genre select buttons.
-  - The edit button on movie tile selected, from the drop down list the new genre is present.
-  - On add movie form, new genre is present.
-  - Each title has a edit or delete button. Edit brings up the correct genre field, the buttons present works as above.
-  - Editing works as intended,  Flash message 'Genre updated' present
-  - delete button remove the genre from page. In addition no longer selectable as search button or in the edit movie form or add movie form.
-  - Flash message 'Genre Deleted'
+- Product management
+  
+- Product views  ( edit and delete options)
+
 
 ### Functionality testing
 
@@ -383,28 +344,24 @@ issues seen on either. A wide range of screen sizes tested from mobile, tablet a
 - I have tested compatibility on the heroku published website of the project on a 1920 x 1080 monitor, a galaxy s7 
 and a Motorola  one+ mobile phone with no issues noted
 
-- The website was submitted for peer review and no Issues were mentioned
+- The website was isubmtted for peer review and no Issues were mentioned
 
 ### Code Validation
 -  https://jigsaw.w3.org/css-validator/   
 
-    - This document validates as CSS level 3 + null 
+    - This document validates as CSS level 3 + SVG.  Tested on each specific app address (products, bag etc) 
 
 -  https://validator.w3.org/
 
-    - all pages checked with no issues. 
+    -  
 
 -  https://wave.webaim.org/ - A web accessibility checker
 
-    - Some minor contrast issue on the buttons, Noted but follows color scheme. Label missing for the search bar, but this was intended.
+    - 
 
 -  https://pep8online.com - app.py file checked
 
-    - all right
 
--  https://seositecheckup.com/analysis 
-
-    - 404 custom error page tester - passed
 
 ### User stories testing
 
@@ -517,17 +474,9 @@ and a Motorola  one+ mobile phone with no issues noted
 
 ### Issues found during development
 
--  For loop issue.  Named the collection as genre (should of used plural), should have been genres as this creates
-uniformity in 'for loop' {% for genre in genres %} Forced me to write {% for genres in genre %}
+  - Checkout page not displaying correctly on mobile view.  To address this issue I created a mobile only view by using bootstrap display- none and block commands at certain break points. This worked as a good fix for the code, however a problem with the increment buttons was present. I decided to remove these as the mobile view was presented differently and this was the cleanest and quickest fix.
 
-- Hero image failed validation.  This was due to the the image being directly in the HTML code and also using a Jinja expression to locate the file. 
-  A simpler method was placing in the css file as 'background' and linking via a class. This warning was also similar for the default image of the onerror when displaying a image of the movie. 
-
-- Modal button created in the categories section for Genres when deleting.  However on testing it was not working as intended. Confirmation appeared as intended, but when confirmed for deletion the wrong Genre would be deleted. This was always the first displayed in the list. No quick fix found, confirmed modal button setup was correct, decided to leave this out as this is an admin function.   
-
-- Your site is having problems building: The tag for on line 668 in README.md was not properly closed. For more information, see https://docs.github.com/github/working-with-github-pages/troubleshooting-jekyll-build-errors-for-github-pages-sites#tag-not-properly-closed. 
-
-  The above is from github and prevents the site being published. As this is being published by heroku then this is not an issue at this time. I cannot find a fix for this and am apprehensive to pull a thread so close to the deadline.
+  - During the deployment of the project to Heroku, Gitpod has changed the installed apps that show in the requirements.txt.  This has caused Over 100+ entries into the req's file. In addition to this upon restart of the gitpod repository several apps require to be reinstalled each time via a terminal. However once this is done the site runs correclty on gitpod.  Testing has shown that this causes no issues with heroku (albeit a rather large Req's file.).  I was left with several options from cloneing the repo to creating a new branch.  This possibly could effect the continuity of the course material, So I have decided to leave the changes made by gitpod. To minimise the impact I created a copy of the actual required Requirements.txt file (named _copy),  and also a seperate file of the dependencies that I need to reinstall everytime the gitpod server is started.  This is a simple terminal command of "pip3 install -r reinstall.txt" . Although not ideal, at so close to submission deadline, with no other adverse effects present this was my safest option and the deployment via Heroku appears to be un-affected. 
 
 ### Performance testing
 
@@ -555,82 +504,109 @@ To deploy the project you will first need to clone the repository located at git
 A full walk-through from github is available here [cloning a repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
 
 - Once cloned in the command terminal type:
-- pip3 install Flask
-- touch app.py (creates app file)
-- touch env.py (same as above)
-- touch gitignore (if not present) and add the following
-    - env.py
-    - --pycache--/
 
-- In the env.py 
-    - import os
+- touch gitignore (if not present) and add the following:
 
-    - set confidential data from MongoDB collection
+      env.py
+      --pycache--/
+      *.sqlite3
+      *.pyc
 
-          -  IP : 0.0.0.0 
-          -  PORT : 5000 
-          -  SECRET_KEY : YOUR_SECRET_KEY 
-          -  MONGO_URI : “mongo db link” 
-          -  MONGO_DBNAME : “database name”
+#### Create Environment Variables
 
+- Create `env.py` file, add `import os` to the top of file and add these environment variables. Ensure that env.py is included in gitignore before you push to the repository or  include them in the heroku Config vars instead  (key , value).
 
-- The requirements.txt should contain the following dependencies
+      Env variables 
+      ------------- 
+      os.environ['DEVELOPMENT'] = True
+      os.environ['SECRET_KEY'] = <your value> 
+      os.environ['STRIPE_PUBLIC_KEY'] = <your value>
+      os.environ['STRIPE_SECRET_KEY'] = <your value>
+      os.environ['STRIPE_WH_SECRET'] = <your value>
+      os.environ['AWS_ACCESS_KEY_ID'] = <your value>
+      os.environ['AWS_S3_REGION_NAME'] = <your value>
+      os.environ['AWS_SECRET_ACCESS_KEY'] = <your value> 
+      os.environ['AWS_STORAGE_BUCKET_NAME'] = <your value> 
+      os.environ['EMAIL_HOST_PASS'] = <your value> 
+      os.environ['EMAIL_HOST_USER'] = <your value>
+      os.environ['DEFAULT_FROM_EMAIL'] = <your value> 
+      os.environ['UNSUBSCRIBE_URL'] = <your value> 
+      os.environ['HEROKU_HOSTNAME'] = <your value> 
 
-      - click==8.0.1
-      - dnspython==2.1.0
-      - Flask==2.0.1
-      - Flask-PyMongo==2.3.0
-      - itsdangerous==2.0.1
-      - pymongo==3.12.0
-      - Werkzeug==2.0.1
+- The requirements.txt should contain the following dependencies:
+
+  - To install the project dependencies type  ` "pip3 install -r requirements.txt"`
+
+        asgiref==3.2.3
+        boto3==1.12.42
+        botocore==1.15.42
+        chardet==3.0.4
+        dj-database-url==0.5.0
+        Django==3.0.1
+        django-allauth==0.41.0
+        django-countries==6.0
+        django-crispy-forms==1.8.1
+        django-storages==1.9.1
+        docutils==0.15.2
+        gunicorn==20.0.4
+        idna==2.8
+        jmespath==0.9.5
+        oauthlib==3.1.0
+        Pillow==7.0.0
+        psycopg2-binary==2.8.5
+        python3-openid==3.1.0
+        pytz==2019.3
+        requests==2.22.0
+        requests-oauthlib==1.3.0
+        s3transfer==0.3.3
+        sqlparse==0.3.0
+        stripe==2.42.0
+        urllib3==1.25.7
 
 - Add Procfile that contains:
-    - web: python app.py
 
+      web: gunicorn chunky_funky.wsgi:application
 
-#### MongoBD Setup
+#### Create SuperUser
 
-- Login to your account
-- Create Database and add 5 collections (ages, formats, genres, movies and users) which will have the following values:
+- Type `"python3 manage.py createsuperuser"` and follow the instructions in the terminal.
 
-        - ages
-              - age_rating
-        - formats
-              - format_type (BluRay etc)
-        - genres
-              - genre_name (film genre types)
+#### Migrate
 
-- The following collection values will be created within the application as data added.
+- Apply model migrations `"python3 manage.py makemigrations" (test by adding --dry-run)` followed by `"python3 manage.py migrate" (test by adding --plan)`.
 
-        - movies (genre_name, movie_name, release_date,
-                  run_time, age_rating, format_type,
-                  movie_story, wish_list, image_url,
-                  created_by)
+#### Run Locally
 
-        - users
-              - username, password, email
+- type '"python3 manage.py runserver"'
 
-Setup MongoDB security and database access
-
-
-#### How to deploy to deploy the project to the hosting platform Heroku:
+### How to deploy to deploy the project to the hosting platform Heroku:
 
 - Create new app (must use dash or minus , use similar to repo name(or same as)
 
-        - Region = europe
+        - Region = europe (or your location)
         - CREATE APP
         - Deployment method  =  Github
         - Search for repo to connect to  (PRESS CONNECT)
+
+- Under resources, search and select the add-on 'heroku postgres' database
 
 Do not auto deploy just yet!!
 
 - Goto settings at top. then reveal config vars.
 
-    - Input values from the env.py file   (PORT, IP, SECRET_KEY, MONGO_URI, MONGO_DBNAME)
+    - Input values from the env.py file   (As listed above),  however exclude Development = True
+      - Add to vars
 
-    - You must push the new files to github (procfile and requirements.txt)  =  git status then git commits.
+               USE AWS = True
+               DATADASE_URL = <your value>
+
+    - You must push the new files to github (procfile and requirements.txt)  =  git status then gitcommits.
 
 Enable automatic deploys  then Deploy branch (main)
+
+### AWS
+
+- Instructions for hosting media and static files with AWS S3 Bucket can be found [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html)
 
 
 [Back to Table of contents](#table-of-contents)
@@ -644,15 +620,13 @@ Enable automatic deploys  then Deploy branch (main)
 
 * [w3schools.com](https://www.w3schools.com)
 
-* [codeinstitute](https://codeinstitute.net/) - On-going course progression
+* [codeinstitute](https://codeinstitute.net/) - On-going course progression and specifically the teaching material throught-out the course.
 
-* [Flask](https://flask.palletsprojects.com/en/2.0.x/) - User Guide
+  - Specific credit for the walkthrough project of boutique ado for general help in creating the website
 
 ### Code Templates
 
-- Various [Materilize](https://materializecss.com) templates used.
-
-- CI code validation for form inputs where the 'required' field is needed.  This was provided in the mini project 'task manager'.
+- Various [Bootstrap](https://getbootstrap.com/) templates used.
 
 ### Content
 
