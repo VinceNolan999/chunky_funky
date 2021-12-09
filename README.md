@@ -347,19 +347,22 @@ and a Motorola  one+ mobile phone with no issues noted
 - The website was isubmtted for peer review and no Issues were mentioned
 
 ### Code Validation
+
 -  https://jigsaw.w3.org/css-validator/   
 
     - This document validates as CSS level 3 + SVG.  Tested on each specific app address (products, bag etc) 
 
 -  https://validator.w3.org/
 
-    -  
+    -  passes except for script type="text/javascript".  I have left these unchanged for legacy browsers.
 
 -  https://wave.webaim.org/ - A web accessibility checker
 
-    - 
+    - Checked on all major pages. Showed 2 errors in connection with a missing label on the search bar and the empty button associated with it. I have left this as is as have inclused text in the button and also an aria-label.  no other errors or issues.
 
--  https://pep8online.com - app.py file checked
+-  Pep8 validation.  This was completed using "python3 -m flake8" in the terminal interface. 
+
+    - The code was refactored to a high level.  Most queries that remain are in the migrate or built in files.  The remaining items are mostly line too long for which I decided to leave as they were for readability purposes.
 
 
 
@@ -480,8 +483,7 @@ and a Motorola  one+ mobile phone with no issues noted
 
 ### Performance testing
 
-  - I have used [Lighthouse](https://developers.google.com/web/tools/lighthouse/) for the performance testing. As the file sizes are
-    downloaded by URL this affected the performance speed. Using URL's was recommended by 
+  - I have used [Lighthouse](https://developers.google.com/web/tools/lighthouse/) for the performance testing. No relevant errors present. Screen shots of the result are shown below.
 
 #### Desktop performance
 
