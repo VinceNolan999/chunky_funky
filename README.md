@@ -32,79 +32,38 @@
  ---
 ## <u>UX</u>
 
- ### User Goals
-  
- #### New user Goals
-
-- To create an account that enable the user to login and to logout.
-
-- 
-
-- To show A user profile that matches the registration details.
-
-- 
-
-- 
-
-- 
-
-- 
-
-- 
- 
-
-#### Returning User Goals
-
--  
-
-- 
+  - The aim of this website is to be a E-commerce store for a fictional Custom made furniture shop which users can browse products and purchase.
 
 ### User Stories
 
-#### As A New user.
+#### Unregistered User
 
-- 
+  - To understand the intent and purpose of the site.
+  - For the site to be useable on different devices
+  - to learn more about the company and its history.
+  - to view a catalog of products the company is selling
+  - ability to add products to a shopping bag 
+    - ability to increase or decrease the items in the shopping bag.
+    - ability to remove items.
+  - a system to purchase the items securely
+  - to recieve confirmation via onscreen prompts and also Emails.
+  - To be able to register so my details are stored for future purposes.
+  
+#### Registered User
 
-- I want to be able to log in and log out having a unique user account and password known only to me. 
+  - To Sign in and Out of my account.
+  - To recover my password if forgotten
+  - be able to view and edit my details 
+  - A system to see my previous orders and contents.
+  - For my saved delivery details to populate the forms where required.
 
-- 
- 
-- 
+#### Site Owner/Admin
 
-- 
-
-- 
-
-#### As A returning user.
-
-- I want to be able to log in and log out using a unique user account and password created by myself
-
-- 
-
-- 
-
-- 
-
-- 
-
-#### Admin Owner Goals
-
-- 
-
-- Each user to have a unique login and secure password only known to them.
-
-- ability for users to log out of the account.
-
-- 
-
-- 
-
-- 
-
-- 
-
-- A Profile section for the user to verify there details.
-
+  - To showcase the products the company makes and sells.
+  - to be able to edit and delete products.
+  - to be able to add new products.
+  - I want users to be able to make purchases safely and securely
+  
 
 ### Structure of the website
 
@@ -113,18 +72,19 @@
 
 #### Database Schema
 
-![MongoDB Schema](static/readme-docs/ms3schema.jpeg)
+![MongoDB Schema]()
 
 ---
 ## <u>Features</u>
 
--  
-
-- 
-- 
-- 
-
-- 
+- Site is made using Django which is a large feature packed framework
+- Django has built in account creation features. This enables emails to be sent to verify details as well as forgotten passwords.
+- Products are stored in a PostgresSQL database and can be easily viewed by the user.
+- products can be searched for via a search bar or a series of drop down selections.
+- The site conforms to the principles of CRUD.  The site owner can Create, update and delete products that all users can read.
+- A payment handler named STRIPE is used to facilitate a safe and secure payment system for the user.
+- Previous orders and delivery details are saved on the users profile.
+- A bootstrap 'Toast' system is used to show messages in relation to the users or site owners actions.  Eg. adding products to there bag or updating products.
 
 #### Fonts
 
@@ -133,20 +93,20 @@
 
 #### Images
 
-- URL links to images displayed on the product page.
+- Images are saved within the AWS cloud storage service. 
 
-- Background Image of main landing page
+- Background Image of main landing page obtained Adam Patterson on Unsplash
 
 #### Navbar and footer
 
-- low profile navigation bar and footer
+- Interactive Navigation bar and footer
 
 - Navbar located at top with brand name to the left and a responsive menu on the right for the account section.
     - When not logged in it displays the options of Login and Register. 
     - Logged in for a user will show options of profile and Logout. 
     - Logged in as a superuser will reveal the product management setion that allows the adding of products.
     - Logging in Removes login/register and replaces with logout.
-- Shopping bag and Value Link (if applicable) - Links to Users shopping Bag.
+- Shopping bag and Value amount - Links to Users shopping Bag.
 
 #### Search section
 
@@ -156,20 +116,24 @@
 
 - On mobile view the search categories are available as a Hamburger Drop down menu
 
-- Footers located at the bottom with placeholder links to social media sites. In addition there is a section about the company.
+
 
 #### Hero Image
 
 - Fixed image wood workshop.
 
+- Call to action 'goto shop' button for quick link to the products page.
+
+- Footers located at the bottom with placeholder links to social media sites. In addition there is a section about the company.
+
 #### Toast Message display area. 
 
-- To the right, a toast message will appear for the following actions.
-
-    - 
-    - 
-    - 
-    - 
+- To the top right, toast message will appear depending on actions. They are in 4 categories: Success, Info, warning and Error.
+    - Success: Pruduct updated, product added to bag, removed from bag, order processed, admin product added/updated/deleted. Profile updated
+    - Info: admin editing product and viewing of previous order in profile
+    - warning:  notification for admin that stripe public key not set.
+    - Error: Removing item from bag failed, payment faliure, product not found, failed to add prodcut, checkout form not completed correctly,
+        search box empty,  admin failed to update product. 
 
 #### Profile Page
 
@@ -177,25 +141,36 @@
 
 #### Product Page
 
+- A grid style layout of the stores products. number of items displayed is dependant on screen size.
+- A sort button with various options . eg by name or price etc.
+- While admin user the addition of Edit and delete buttons
+- clicking product will goto a product overview that contains further details. 
+    - option to add this product to the shopping bag and a quantity selector.
+    - option to return back to the products page.
+
 #### Shopping Bag
+
+-  produces a visual list of the items and quantitys entered by the users.
+-  allows users to update or delete the order
+-  a breakdown of costs per item and a grand total of all products.
+-  a link to goto a 'checkout' section or continue shopping.
 
 #### Checkout Section
 
-### Existing Features
-
-- unique username creation
-
-- password validation on registration form. 
-
-- Customer orders and delivery details that are stored on a database and accessible to the user. 
-
-- Superuser able to add new products to the database
+- A section that sumaries the users intended purchase and the total.
+- A form that allows users to enter there delivery details.
+- User logged in will pre populate the form with the details stored in the profile form.
+- Annonymous users will be able register or login if they choose. Or continue without haveing to register.
+- logged in users can notify if the details entered should update there profile detials.
+- A payment system powere by stripe.
+- confirmationary button to complete the order or return to the shopping bag section.
 
 #### Future Features 
 
 - Facility for users to log in via existing social media accounts. 
-  
-- 
+- contact form for queries.
+- review page for users.
+- News section that will email exisiting customers new products.
 
 [Back to Table of contents](#table-of-contents)
 
@@ -262,67 +237,96 @@
 ---
 ## <u>Testing</u>
 
-Continuous ongoing testing during development to ensure functions working correctly and as intended. Below is final test regime to confirm.
+Continuous ongoing testing during development to ensure functions working correctly and as intended.
+Below is final manual test regime conducted on the deployed site on Heroku to ensure that the site is working as intended.
 
 ### User Not logged In
 - Navbar 
-    - Only access is to the Home and Login section.
-    - Brand and Home button takes to correct page.
-    - Pressing log in takes to correct screen.
-    - Register link present. 
-    - Registration form displays correctly.
-    - form validation working correctly.
-    - password validation works correctly.  Validation shows message 'passwords do not match'.
-    - user created on MongoDB and profile page present when logged in.
-    - Hamburger menu appears at relevant view width and drop down menu works correctly and correct links present and working.
+    - My account button correctly shows register and login
+    - login reveals a sign in page for username and password
+    - remember me button to store the details.
+    - home button returns to the home page.
+    - if valid credentials added to sign in then users is correctly logged in and toast message displayed.
+    - option to sign up for an account present that redirects to a sign up page.
+    - register/signup page form correct and works as inteneded.
+
+    - checkout bag takes direct to shopping bag. The value is responsive if items added or removed.
+    - search box present and button correct
+    - On mobile the search button opens up the search bar in a drop down menu
+    - On mobile a hamburger menu is present for the relevant categorys.
+    - search button correct and filter as desired.
+    - GOTO SHOP button links directly to the property pages
+
+- Footer 
+    - All links open there relative pages in a new tab.
 
 - Search Section
-  - all genre select buttons and the Wishlist button displaying the correct movie from the movie card details.
-  - Search bar correctly display the movies by name or by movie description. 
-  - Search and Reset button working as intended.
+  - all product selection options correctly filter as intended and return the desired product views.
+  - dropdown selection on products show correctly
+  - Product filters collapse to a hamburger menu on mobile view and work correctly
+  - sort by filter works as intended
 
-- Product categorys
-  - displayed as inteneded. Pressing the card reveals information about the movie.  Movies without a correct Url image link display a stock
+- Products page
+  - displayed as inteneded or filtered. Number of products on page depends on screen size, scales from between 1 and 4 products. Images and product details clearly visible. If no Image a stock 'no photo' picture present.
     placeholder image.
-  - No access to edit facility
+  - No access to edit or delete option meant for the admins.
 
-  - Shopping Bag
+- Product information page.
+  - large image present as well as product details with a expanded description.
+  - quantity buttons present to increase or decrease the amount with a visible count in the middle. 
+  - product limit is set between 1 and 99.  Use of buttons to go outside of this range is not possible. Manually putting in a number that is not in 
+  this range brings a pop up error
+  - keep shopping botton links back to the product page.
+  - add to bag button correctly adds the selected quantity of the product to the bag. A Success toast message at top right apprears with the correct product with a link to goto a secure checkout. Toast dismiss button works correctly, and link to checkout takes to the checkout page.
+  - works as expected in all device views.
+  - adding multiple different items works as intened. checkout total changes accordingly.
+  
+- Shopping Bag
+  - List of products added to the bag is present with price and quantity shown correctly and then a subtotal for each product.
+  - quantity button present which works in same was as the add prodcut.  Addition buttons of Update and remove buttons present. 
+  - update button changes the quantity correctly and sub total changes. A success toast appears updated in the bag.
+  - remove button correctly removes that product from the list regardless of the quantity. A toast success present stating the product has been removed.
+  - Product grand total present at bottom of screen which correctly shows the amounts. 
+  - Keep shopping button which return to the products page
+  - Secure checkout button that directs to the checkout page. 
 
-  - Checkout 
+- Checkout 
+  - a form is present with fields to capture name, email and delivery address.
+  - correct order summary shown.
+    - required fileds work as intened and are not allowed to be left blank. valid email required.
+  - option to create an account to save order information.  
+  - Users can remain annonymous.
+  - payments card area.
+  - adjust bag button redirect back to shopping bag.
+  - complete order button processes the order if all required fileds completed.
 
-### User Logged In  
+  - a confirmation page shows on completion of checkout form with the correct products and details entered by the user. A toast stating the order has been processed along with a order number.
+  - In Django admin the order is present and correct.
+  - on stripe the webhooks are succesful. Charge.succeded and  Payment_intent.succeded which verified that the order is in the database.
+  - During testing of the stripe webhook feature and form submission errors the following test was created and verified.
+    - In the checkout/static/checkout/js/stripe_elements.js  File line 110 (form.submit();) was commented out/deleted. This would in effect prevent the checkout form being sent to the Django database correctly.  The webhook handler from stripe then correctly checked that the order was not in the database and created the order. This acts as a backup to ensure that orders are created succesfully even if there is a faliure in the form submission.
+
+### User Logged In 
+  All the above tests completed whilst logged in. Below is the additional option available to logged in users and any additional features.
 
 - Navbar 
-  - Confrirmed that there is no access to the admin section.
-  - Logged in user lands at the profile page, flash message displayed welcoming User.
-  - flash message displayed if entering incorrect username or password.
-  - Menu options goto the correct page.
-  - Log Out works correctly.  Only options of home and Log in present, no ability to edit movies.
-
-- Shopping Bag
-
-- Search Section
-  - all genre select buttons and the Wishlist button displaying the correct movie from the movie card details.
-  - Search bar correctly display the movies by name or by movie description. 
-  - Search and Reset button working as intended.
-
-- Product Categorys
-  - displayed as inteneded. Pressing the card reveals information about the film.  Films without a correct Url image link display a stock
-    placeholder image.
-  - access to edit facility. pressing the edit button takes you to the correct edit screen for the movie.
-
-- Profile Section.
-  - pressing takes you to the profile page, displaying username 
+  - 
 
 - Log out
   - session cookie is removed. No access to other features.
   - toast message confirming 'you are now logged out'
 
+- Profile Section.
+  - pressing takes you to the profile page
+
+- Checkout
+
 ### Admin Logged In 
+  All the above tests created.  The only additional features for admin is in regards to the adding, editing or deleting prodcuts.
 
-- 
 
-- Product management
+- Navbar
+  - Product management
   
 - Product views  ( edit and delete options)
 
