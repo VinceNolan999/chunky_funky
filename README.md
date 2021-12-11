@@ -326,9 +326,36 @@ Below is final manual test regime conducted on the deployed site on Heroku to en
 
 
 - Navbar
-  - Product management
+  - Product management option available in My Account
+  - On logout this is removed and no access to this feature And toast present stating logged out.
+
+- Product Management page displaying correctly
+  - Form required sections working correctly
+  - adding images tested. 
+
+
   
-- Product views  ( edit and delete options)
+- Product views  (edit and delete options)
+
+
+
+### Order Verification testing
+
+- Checkout Success
+
+![Checkout](media/readme_files/checkout_success.png)
+
+- Django Order in Admin section 
+
+![Django](media/readme_files/Django_order.png)
+
+- Confirmation of Stripe webhook success.
+
+![Stripe](media/readme_files/stripe_success.png)
+
+- Email verification of order to user
+
+![Email](media/readme_files/Email_to_user.png)
 
 
 ### Functionality testing
@@ -348,7 +375,7 @@ issues seen on either. A wide range of screen sizes tested from mobile, tablet a
 - I have tested compatibility on the heroku published website of the project on a 1920 x 1080 monitor, a galaxy s7 
 and a Motorola  one+ mobile phone with no issues noted
 
-- The website was isubmtted for peer review and no Issues were mentioned
+- The website was submitted for peer review and no Issues were mentioned
 
 ### Code Validation
 
@@ -491,11 +518,11 @@ and a Motorola  one+ mobile phone with no issues noted
 
 #### Desktop performance
 
-![Performance desktop](static/readme-docs/lh-desktop.jpg)
+![Performance desktop](media/readme_files/c-f-desktop-LH.png)
 
 #### Mobile Performance
 
-![Performance mobile](static/readme-docs/lh-mobile.png)
+![Performance mobile](media/readme_files/c-f-mobile-LH.png)
 
 
 [Back to Table of contents](#table-of-contents)
@@ -649,3 +676,5 @@ Enable automatic deploys  then Deploy branch (main)
 - Code Institute Pre-loaded github tools
 
 [Back to Table of contents](#table-of-contents)
+
+

@@ -35,7 +35,10 @@ class Product(models.Model):
     rating = models.DecimalField(
         max_digits=6, decimal_places=1, null=True, blank=True
     )
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    # image_url = models.URLField(max_length=1024, null=True, blank=True)
+    '''
+    found in testing.  Will not display url image so removed for now.
+    '''
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
