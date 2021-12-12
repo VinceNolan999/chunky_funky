@@ -1,4 +1,4 @@
-# Chunky Funky Furninture
+# Chunky Funky Furniture
 
 ### [Link to Live Heroku hosted website](https://chunky-funky.herokuapp.com/)
 
@@ -46,7 +46,7 @@
     - ability to increase or decrease the items in the shopping bag.
     - ability to remove items.
   - a system to purchase the items securely
-  - to recieve confirmation via onscreen prompts and also Emails.
+  - to receive confirmation via onscreen prompts and also Emails.
   - To be able to register so my details are stored for future purposes.
   
 #### Registered User
@@ -104,7 +104,7 @@
 - Navbar located at top with brand name to the left and a responsive menu on the right for the account section.
     - When not logged in it displays the options of Login and Register. 
     - Logged in for a user will show options of profile and Logout. 
-    - Logged in as a superuser will reveal the product management setion that allows the adding of products.
+    - Logged in as a superuser will reveal the product management section that allows the adding of products.
     - Logging in Removes login/register and replaces with logout.
 - Shopping bag and Value amount - Links to Users shopping Bag.
 
@@ -129,15 +129,15 @@
 #### Toast Message display area. 
 
 - To the top right, toast message will appear depending on actions. They are in 4 categories: Success, Info, warning and Error.
-    - Success: Pruduct updated, product added to bag, removed from bag, order processed, admin product added/updated/deleted. Profile updated
+    - Success: Product updated, product added to bag, removed from bag, order processed, admin product added/updated/deleted. Profile updated
     - Info: admin editing product and viewing of previous order in profile
     - warning:  notification for admin that stripe public key not set.
-    - Error: Removing item from bag failed, payment faliure, product not found, failed to add prodcut, checkout form not completed correctly,
+    - Error: Removing item from bag failed, payment failure, product not found, failed to add product, checkout form not completed correctly,
         search box empty,  admin failed to update product. 
 
 #### Profile Page
 
--  Profile page displaying the username and delivery address details of the user. The address is displayed as a form and can be edited and updated. Username cannot be changed.  In addition the profile page displays the users previous orders,  this links to the order which contains information to that order including, date, product purchased , delivery address and Grand total.  A toast is also shown scecifying that this is a previous purchase made.
+-  Profile page displaying the username and delivery address details of the user. The address is displayed as a form and can be edited and updated. Username cannot be changed.  In addition the profile page displays the users previous orders,  this links to the order which contains information to that order including, date, product purchased , delivery address and Grand total.  A toast is also shown specifying that this is a previous purchase made.
 
 #### Product Page
 
@@ -150,27 +150,27 @@
 
 #### Shopping Bag
 
--  produces a visual list of the items and quantitys entered by the users.
+-  produces a visual list of the items and quantity's entered by the users.
 -  allows users to update or delete the order
 -  a breakdown of costs per item and a grand total of all products.
 -  a link to goto a 'checkout' section or continue shopping.
 
 #### Checkout Section
 
-- A section that sumaries the users intended purchase and the total.
+- A section that summaries the users intended purchase and the total.
 - A form that allows users to enter there delivery details.
 - User logged in will pre populate the form with the details stored in the profile form.
-- Annonymous users will be able register or login if they choose. Or continue without haveing to register.
-- logged in users can notify if the details entered should update there profile detials.
-- A payment system powere by stripe.
-- confirmationary button to complete the order or return to the shopping bag section.
+- Anonymous users will be able register or login if they choose. Or continue without having to register.
+- logged in users can notify if the details entered should update there profile details.
+- A payment system powered by stripe.
+- confirmatory button to complete the order or return to the shopping bag section.
 
 #### Future Features 
 
 - Facility for users to log in via existing social media accounts. 
 - contact form for queries.
 - review page for users.
-- News section that will email exisiting customers new products.
+- News section that will email existing customers new products.
 - display images via URL.
 - Slide show of images or more images in the product detail view.
 
@@ -250,12 +250,12 @@ Below is final manual test regime conducted on the deployed site on Heroku to en
     - home button returns to the home page.
     - if valid credentials added to sign in then users is correctly logged in and toast message displayed.
     - option to sign up for an account present that redirects to a sign up page.
-    - register/signup page form correct and works as inteneded.
+    - register/signup page form correct and works as intended.
 
     - checkout bag takes direct to shopping bag. The value is responsive if items added or removed.
     - search box present and button correct
     - On mobile the search button opens up the search bar in a drop down menu
-    - On mobile a hamburger menu is present for the relevant categorys.
+    - On mobile a hamburger menu is present for the relevant categories.
     - search button correct and filter as desired.
     - GOTO SHOP button links directly to the property pages
 
@@ -269,7 +269,7 @@ Below is final manual test regime conducted on the deployed site on Heroku to en
   - sort by filter works as intended
 
 - Products page
-  - displayed as inteneded or filtered. Number of products on page depends on screen size, scales from between 1 and 4 products. Images and product details clearly visible. If no Image a stock 'no photo' picture present.
+  - displayed as intended or filtered. Number of products on page depends on screen size, scales from between 1 and 4 products. Images and product details clearly visible. If no Image a stock 'no photo' picture present.
     placeholder image.
   - No access to edit or delete option meant for the admins.
 
@@ -278,14 +278,14 @@ Below is final manual test regime conducted on the deployed site on Heroku to en
   - quantity buttons present to increase or decrease the amount with a visible count in the middle. 
   - product limit is set between 1 and 99.  Use of buttons to go outside of this range is not possible. Manually putting in a number that is not in 
   this range brings a pop up error
-  - keep shopping botton links back to the product page.
-  - add to bag button correctly adds the selected quantity of the product to the bag. A Success toast message at top right apprears with the correct product with a link to goto a secure checkout. Toast dismiss button works correctly, and link to checkout takes to the checkout page.
+  - keep shopping button links back to the product page.
+  - add to bag button correctly adds the selected quantity of the product to the bag. A Success toast message at top right appears with the correct product with a link to goto a secure checkout. Toast dismiss button works correctly, and link to checkout takes to the checkout page.
   - works as expected in all device views.
-  - adding multiple different items works as intened. checkout total changes accordingly.
+  - adding multiple different items works as intended. checkout total changes accordingly.
   
 - Shopping Bag
   - List of products added to the bag is present with price and quantity shown correctly and then a subtotal for each product.
-  - quantity button present which works in same was as the add prodcut.  Addition buttons of Update and remove buttons present. 
+  - quantity button present which works in same was as the add product.  Addition buttons of Update and remove buttons present. 
   - update button changes the quantity correctly and sub total changes. A success toast appears updated in the bag.
   - remove button correctly removes that product from the list regardless of the quantity. A toast success present stating the product has been removed.
   - Product grand total present at bottom of screen which correctly shows the amounts. 
@@ -295,18 +295,18 @@ Below is final manual test regime conducted on the deployed site on Heroku to en
 - Checkout 
   - a form is present with fields to capture name, email and delivery address.
   - correct order summary shown.
-    - required fileds work as intened and are not allowed to be left blank. valid email required.
+    - required fields work as intended and are not allowed to be left blank. valid email required.
   - option to create an account to save order information.  
-  - Users can remain annonymous.
+  - Users can remain anonymous.
   - payments card area.
   - adjust bag button redirect back to shopping bag.
-  - complete order button processes the order if all required fileds completed.
+  - complete order button processes the order if all required Fields completed.
 
   - a confirmation page shows on completion of checkout form with the correct products and details entered by the user. A toast stating the order has been processed along with a order number.
   - In Django admin the order is present and correct.
-  - on stripe the webhooks are succesful. Charge.succeded and  Payment_intent.succeded which verified that the order is in the database.
+  - on stripe the webhooks are successful. Charge.succeeded and  Payment_intent.succeeded which verified that the order is in the database.
   - During testing of the stripe webhook feature and form submission errors the following test was created and verified.
-    - In the checkout/static/checkout/js/stripe_elements.js  File line 110 (form.submit();) was commented out/deleted. This would in effect prevent the checkout form being sent to the Django database correctly.  The webhook handler from stripe then correctly checked that the order was not in the database and created the order. This acts as a backup to ensure that orders are created succesfully even if there is a faliure in the form submission.
+    - In the checkout/static/checkout/js/stripe_elements.js  File line 110 (form.submit();) was commented out/deleted. This would in effect prevent the checkout form being sent to the Django database correctly.  The webhook handler from stripe then correctly checked that the order was not in the database and created the order. This acts as a backup to ensure that orders are created successfully even if there is a failure in the form submission.
 
 ### User Logged In 
   All the above tests completed whilst logged in. Below is the additional option available to logged in users and any additional features.
@@ -320,16 +320,16 @@ Below is final manual test regime conducted on the deployed site on Heroku to en
 
 - Profile Section.
   - pressing takes you to the profile page
-  - Displays the users name and the defualt delivery information which can be ammend by the user. Pressing the Update information button does as it says..
-  - Order history present and display correctly. Clicking on the order brings up a summary and notifys that this was a previous order.
+  - Displays the users name and the default delivery information which can be amend by the user. Pressing the Update information button does as it says..
+  - Order history present and display correctly. Clicking on the order brings up a summary and notifies that this was a previous order.
 
 - Checkout
   - The procedure is the same as above for Not logged in users.  T
-  - The form is now pre filled with the correct user deleiver details
+  - The form is now pre filled with the correct user deliver details
   - the option to save the delivery details to the profile via a checkbox. 
   
 ### Admin Logged In 
-  All the above tests created.  The only additional features for admin is in regards to the adding, editing or deleting prodcuts.
+  All the above tests created.  The only additional features for admin is in regards to the adding, editing or deleting product's.
 
 - Navbar
   - Product management option available in My Account
@@ -397,7 +397,7 @@ and a Motorola  one+ mobile phone with no issues noted
 
 -  https://wave.webaim.org/ - A web accessibility checker
 
-    - Checked on all major pages. Showed 2 errors in connection with a missing label on the search bar and the empty button associated with it. I have left this as is as have inclused text in the button and also an aria-label.  no other errors or issues.
+    - Checked on all major pages. Showed 2 errors in connection with a missing label on the search bar and the empty button associated with it. I have left this as is as I have included text in the button and also an aria-label.  no other errors or issues.
 
 -  Pep8 validation.  This was completed using "python3 -m flake8" in the terminal interface. 
 
@@ -414,11 +414,11 @@ and a Motorola  one+ mobile phone with no issues noted
   - For the site to be useable on different devices
     - Responsive for all device sizes
   - to learn more about the company and its history.
-    - A brief section about the compant present on the home page
+    - A brief section about the company present on the home page
   - to view a catalog of products the company is selling
-    - A funcional product page present that allows users to view them in more detail if required.
+    - A functional product page present that allows users to view them in more detail if required.
   - ability to add products to a shopping bag 
-    - A shopping bag is present and procuts can be added, updated or removed from this bag.
+    - A shopping bag is present and products can be added, updated or removed from this bag.
 
   - ability to increase or decrease the items in the shopping bag.
     - Product quantity can be altered as desired between a set minimum and maximum (1-99)
@@ -426,7 +426,7 @@ and a Motorola  one+ mobile phone with no issues noted
     - Remove item from Bag option present.
   - a system to purchase the items securely
     - This is made available via Stripe which is a 3rd party payment system.
-  - to recieve confirmation via onscreen prompts and also Emails.
+  - to receive confirmation via onscreen prompts and also Emails.
     - Toast Notification are present to further confirm the users actions. Personal emails can also be sent in regards to the account options (registration/ lost passwords etc.)  In addition an order confirmation is sent to the users designated email address with an order summary.
   - To be able to register so my details are stored for future purposes.
     - A full built in accounts system via django auth is included in the site. This contains many pre installed services like login and logout to name a few.
@@ -448,11 +448,11 @@ and a Motorola  one+ mobile phone with no issues noted
 #### Site Owner/Admin
 
   - To showcase the products the company makes and sells.
-    - A responsive product page is present which contains the companys products it sells. 
+    - A responsive product page is present which contains the company's products it sells. 
   - to be able to edit and delete products.
     - Admins are able to update and delete existing products.
   - to be able to add new products.
-    - A product management page present that allows the admin to add aditional products.
+    - A product management page present that allows the admin to add additional products.
   - I want users to be able to make purchases safely and securely
     - Stripe payment method has been included in the checkout section of the website, this has its own built in security features.
 
@@ -460,7 +460,7 @@ and a Motorola  one+ mobile phone with no issues noted
 
   - Checkout page not displaying correctly on mobile view.  To address this issue I created a mobile only view by using bootstrap display- none and block commands at certain break points. This worked as a good fix for the code, however a problem with the increment buttons was present. I decided to remove these as the mobile view was presented differently and this was the cleanest and quickest fix.
 
-  - During the deployment of the project to Heroku, Gitpod has changed the installed apps that show in the requirements.txt.  This has caused Over 100+ entries into the req's file. In addition to this upon restart of the gitpod repository several apps require to be reinstalled each time via a terminal. However once this is done the site runs correclty on gitpod.  Testing has shown that this causes no issues with heroku (albeit a rather large Req's file.).  I was left with several options from cloneing the repo to creating a new branch.  This possibly could effect the continuity of the course material, So I have decided to leave the changes made by gitpod. To minimise the impact I created a copy of the actual required Requirements.txt file (named _copy),  and also a seperate file of the dependencies that I need to reinstall everytime the gitpod server is started.  This is a simple terminal command of "pip3 install -r reinstall.txt" . Although not ideal, at so close to submission deadline, with no other adverse effects present this was my safest option and the deployment via Heroku appears to be un-affected. 
+  - During the deployment of the project to Heroku, Gitpod has changed the installed apps that show in the requirements.txt.  This has caused Over 100+ entries into the req's file. In addition to this upon restart of the gitpod repository several apps require to be reinstalled each time via a terminal. However once this is done the site runs correctly on gitpod.  Testing has shown that this causes no issues with heroku (albeit a rather large Req's file.).  I was left with several options from cloning the repo to creating a new branch.  This possibly could effect the continuity of the course material, So I have decided to leave the changes made by gitpod. To minimize the impact I created a copy of the actual required Requirements.txt file (named _copy),  and also a separate file of the dependencies that I need to reinstall every time the gitpod server is started.  This is a simple terminal command of "pip3 install -r reinstall.txt" . Although not ideal, at so close to submission deadline, with no other adverse effects present this was my safest option and the deployment via Heroku appears to be un-affected. 
 
   - During testing I found that it was not possible to display product images by the URL field in the form. I tried several remedies to fix,  Extra elif fields in the product view to name one.  Due to time constraints I decided to remove this from the form. This was done by removing the respective product field in the products.models.py file. No impact on the website other than that field no longer present and the Django database changed to reflect this. Migrations made as a result. 
 
