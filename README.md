@@ -171,6 +171,8 @@
 - contact form for queries.
 - review page for users.
 - News section that will email exisiting customers new products.
+- display images via URL.
+- Slide show of images or more images in the product detail view.
 
 [Back to Table of contents](#table-of-contents)
 
@@ -318,26 +320,32 @@ Below is final manual test regime conducted on the deployed site on Heroku to en
 
 - Profile Section.
   - pressing takes you to the profile page
+  - Displays the users name and the defualt delivery information which can be ammend by the user. Pressing the Update information button does as it says..
+  - Order history present and display correctly. Clicking on the order brings up a summary and notifys that this was a previous order.
 
 - Checkout
-
+  - The procedure is the same as above for Not logged in users.  T
+  - The form is now pre filled with the correct user deleiver details
+  - the option to save the delivery details to the profile via a checkbox. 
+  
 ### Admin Logged In 
   All the above tests created.  The only additional features for admin is in regards to the adding, editing or deleting prodcuts.
-
 
 - Navbar
   - Product management option available in My Account
   - On logout this is removed and no access to this feature And toast present stating logged out.
 
-- Product Management page displaying correctly
-  - Form required sections working correctly
-  - adding images tested. 
-
-
+- Product Management page 
+  - Form 'required' sections working correctly
+  - adding images tested. Bug found with displaying URL only images. see issues found section. Adding images by choosing a file works correctly
+  - creating a product returns admin to the Product detail form and all info is displayed correctly. Navigating to the main product page and New item present.
+    item also present in database.
+  - cancel button direct back to product page.
   
-- Product views  (edit and delete options)
-
-
+- Products Page
+  - Extra buttons available of Edit and Delete.  
+    - Edit button directs to the product management form with the products details fully completed. Editing works as intended.
+    - Delete button removes the item from the product page and database.
 
 ### Order Verification testing
 
@@ -393,124 +401,68 @@ and a Motorola  one+ mobile phone with no issues noted
 
 -  Pep8 validation.  This was completed using "python3 -m flake8" in the terminal interface. 
 
-    - The code was refactored to a high level.  Most queries that remain are in the migrate or built in files.  The remaining items are mostly line too long for which I decided to leave as they were for readability purposes.
+    - The code was refactored.  Most queries that remain are in the migrate or built in files.  The remaining items are mostly line too long for which I decided to leave as they were for readability purposes.
 
 
 
 ### User stories testing
 
-- I want to be able to create a user account that allows further access
+#### Unregistered User
 
-      -  The website has a user registration section where they can create an account and password 
-         which allows access to other features, such as Adding or editing movie cards.         
+  - To understand the intent and purpose of the site.
+    - It is evident what the e-commerce site is selling
+  - For the site to be useable on different devices
+    - Responsive for all device sizes
+  - to learn more about the company and its history.
+    - A brief section about the compant present on the home page
+  - to view a catalog of products the company is selling
+    - A funcional product page present that allows users to view them in more detail if required.
+  - ability to add products to a shopping bag 
+    - A shopping bag is present and procuts can be added, updated or removed from this bag.
 
-- I want to be able to log in and log out having a unique user account and password known only to me.
+  - ability to increase or decrease the items in the shopping bag.
+    - Product quantity can be altered as desired between a set minimum and maximum (1-99)
+  - ability to remove items.
+    - Remove item from Bag option present.
+  - a system to purchase the items securely
+    - This is made available via Stripe which is a 3rd party payment system.
+  - to recieve confirmation via onscreen prompts and also Emails.
+    - Toast Notification are present to further confirm the users actions. Personal emails can also be sent in regards to the account options (registration/ lost passwords etc.)  In addition an order confirmation is sent to the users designated email address with an order summary.
+  - To be able to register so my details are stored for future purposes.
+    - A full built in accounts system via django auth is included in the site. This contains many pre installed services like login and logout to name a few.
+  
+#### Registered User
 
-      -  The username and password are stored on a server with the password being encrypted by 
-         werkzeug (password_hash). This means even the admin does not have access to the password. 
-         A log out function is also present that removes the session cookie and thus the user.
+  - To Sign in and Out of my account.
+    - This is Present.
+  - To recover my password if forgotten
+    - Password recovery via email is included via the built in django services
+  - be able to view and edit my details 
+    - This has been included in the profile section.
+  - A system to see my previous orders and contents.
+    - This is also included in the users profile section and a list is available of past order. Selecting an order link will bring up the order summary similar to the confirmation of order email.
+  - For my saved delivery details to populate the forms where required.
+    - Once the information is added into the profile form and the user remains logged in, when the user goes to the checkout page the form is pre populated. 
+    the user also has the option to update the delivery information if they choose to in the checkout page.
 
-- I want to see Information about movies that are on the database
+#### Site Owner/Admin
 
-      -  On the main page there are Movie card tiles, pressing these tiles reveals 
-         further information about the movie.
- 
-- I want to be able to add and edit movies on the database which records my user details within the database
+  - To showcase the products the company makes and sells.
+    - A responsive product page is present which contains the companys products it sells. 
+  - to be able to edit and delete products.
+    - Admins are able to update and delete existing products.
+  - to be able to add new products.
+    - A product management page present that allows the admin to add aditional products.
+  - I want users to be able to make purchases safely and securely
+    - Stripe payment method has been included in the checkout section of the website, this has its own built in security features.
 
-      -  Only once registered and logged in, the user is able to edit existing movies and 
-         add new movies to the database.
-
-- I want to be able to delete movies from the database
-
-      -  There is a delete button in the edit movie function. This requires 
-         a confirmationary button press to delete.
-
-- I want to be able to tag a movie that I would like and that shows in a separate search.
-
-      -  A 'wish-list' toggle button has been included in the movie information. 
-         This can be selected in the edit movie function or when you create a new movie.
-         A specific 'Wish list' seach button is present in the main search area for quick access to 
-         the wish list movies.
-
-
-### Returning User Stories Testing
-
-- I want to be able to log in and log out using a unique user account and password created by myself
-
-      -  Unique Username, profile and password present on the site.
-
-- I want to edit and add movies and have that action attributed to my account.
-
-      -  As a registered user, you are able to edit and add movies. Doing so will 
-         attribute the addition/change to that user by means of a 'created by' 
-         section in the movie card listing.
-
-- I want to be able to delete movies from the database
-
-      -  A registered user is able to delete movies by way of a delete button, 
-         a confirmationary button also needs to be pressed.
-
-- I want to be able to search the database for movies
-
-      -  The website includes 2 forms of searching. A button selection by Movie Genre's 
-         (including 'Wish list' movies) and by a search bar that can search by movie title 
-         or words in the description.
-
-- I want to be able to flag movies that I would like to have.
-
-      -  A toggle switch for a 'Wish list' is included in the edit and add movie forms. 
-         This then allows all movies in the 'Wish list' to be displayed 
-         by clicking the appropriate button in the seach menu.
-
-
-### Admin Stories testing
-
-- To create a website that users can access a catalog of Movies that they own or that they would like to own or watch.
-          
-      -  The website allows registered users to add there own movies and details about the movies. 
-         They can flag a movie to place it in the wish list section for easier locating.
-
-- Each user to have a unique login and secure password only known to them.
-
-      -  Users can create there own username during registration and a password known only to them. 
-         This is stored in a database with the password being encrypted using a password_hash. 
-
-- ability for users to log out of the account.
-
-      -  A log out facility is present once the user is logged in.  
-         Logging out remove the session cookie for that user.
-
-- Tasks such as editing and adding movies should display the users details.
-
-      -  The movie card will display a 'created by' section in the Movie information. 
-         This will display the users name.
-
-- deleting movies should require a conformationally request to prevent accidental deletion.
-
-      -  Movies can be deleted in the edit movie mode.  
-         Pressing delete will bring up a modal button to confirm deletion.
-
-- users should be able to search for movies, this to be by movie name, description, genre type or by 'wish list'
-
-      -  The website includes 2 forms of searching. A button selection by Movie Genre's 
-         (including 'Wish list' movies) and by a search bar that can search by movie title 
-         or words in the description.
-
-- A function that allows users to flag a movie that they would like to watch/own.  A Wish list.
-
-      -  A toggle switch for a 'Wish list' is included in the edit and add movie forms.  
-         This then allows all movies in the 'Wish list' to be displayed 
-         by clicking the appropriate button in the seach menu.
-
-- A Profile section for the user to verify there details.
-
-      -  A basic profile page which displays the username and email is included once the user is logged in.
-
-### Issues found during development
+### Issues found during development and testing
 
   - Checkout page not displaying correctly on mobile view.  To address this issue I created a mobile only view by using bootstrap display- none and block commands at certain break points. This worked as a good fix for the code, however a problem with the increment buttons was present. I decided to remove these as the mobile view was presented differently and this was the cleanest and quickest fix.
 
   - During the deployment of the project to Heroku, Gitpod has changed the installed apps that show in the requirements.txt.  This has caused Over 100+ entries into the req's file. In addition to this upon restart of the gitpod repository several apps require to be reinstalled each time via a terminal. However once this is done the site runs correclty on gitpod.  Testing has shown that this causes no issues with heroku (albeit a rather large Req's file.).  I was left with several options from cloneing the repo to creating a new branch.  This possibly could effect the continuity of the course material, So I have decided to leave the changes made by gitpod. To minimise the impact I created a copy of the actual required Requirements.txt file (named _copy),  and also a seperate file of the dependencies that I need to reinstall everytime the gitpod server is started.  This is a simple terminal command of "pip3 install -r reinstall.txt" . Although not ideal, at so close to submission deadline, with no other adverse effects present this was my safest option and the deployment via Heroku appears to be un-affected. 
+
+  - During testing I found that it was not possible to display product images by the URL field in the form. I tried several remedies to fix,  Extra elif fields in the product view to name one.  Due to time constraints I decided to remove this from the form. This was done by removing the respective product field in the products.models.py file. No impact on the website other than that field no longer present and the Django database changed to reflect this. Migrations made as a result. 
 
 ### Performance testing
 
@@ -653,7 +605,7 @@ Enable automatic deploys  then Deploy branch (main)
 
 * [w3schools.com](https://www.w3schools.com)
 
-* [codeinstitute](https://codeinstitute.net/) - On-going course progression and specifically the teaching material throught-out the course.
+* [codeinstitute](https://codeinstitute.net/) - On-going course progression and specifically the teaching material through-out the course.
 
   - Specific credit for the walkthrough project of boutique ado for general help in creating the website
 
