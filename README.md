@@ -40,28 +40,28 @@
 
   - To understand the intent and purpose of the site.
   - For the site to be useable on different devices
-  - to learn more about the company and its history.
-  - to view a catalog of products the company is selling
-  - ability to add products to a shopping bag 
-    - ability to increase or decrease the items in the shopping bag.
-    - ability to remove items.
-  - a system to purchase the items securely
-  - to receive confirmation via onscreen prompts and also Emails.
+  - To learn more about the company and its history.
+  - To view a catalog of products the company is selling
+  - Ability to add products to a shopping bag 
+    - Ability to increase or decrease the items in the shopping bag.
+    - Ability to remove items.
+  - A system to purchase the items securely
+  - To receive confirmation via onscreen prompts and also Emails.
   - To be able to register so my details are stored for future purposes.
   
 #### Registered User
 
   - To Sign in and Out of my account.
   - To recover my password if forgotten
-  - be able to view and edit my details 
+  - Be able to view and edit my details 
   - A system to see my previous orders and contents.
   - For my saved delivery details to populate the forms where required.
 
 #### Site Owner/Admin
 
   - To showcase the products the company makes and sells.
-  - to be able to edit and delete products.
-  - to be able to add new products.
+  - To be able to edit and delete products.
+  - To be able to add new products.
   - I want users to be able to make purchases safely and securely
   
 
@@ -110,7 +110,7 @@
 
 #### Search section
 
-- A selection of Buttons allowing searches by product type, split into two main categories of Indoors and Outdoors furniture (each has there own product category types revealed within). An all products link which can sort the products by Price, Rating and Category.
+- A selection of Buttons allowing searches by product type, split into two main categories of Indoors and Outdoors furniture (each has there own product category types revealed within). An 'All Products' link which can sort the products by Price, Rating and Category.
 
 - A search bar allowing searches by Product name or description text.
 
@@ -131,7 +131,7 @@
 - To the top right, toast message will appear depending on actions. They are in 4 categories: Success, Info, warning and Error.
     - Success: Product updated, product added to bag, removed from bag, order processed, admin product added/updated/deleted. Profile updated
     - Info: admin editing product and viewing of previous order in profile
-    - warning:  notification for admin that stripe public key not set.
+    - Warning:  notification for admin that stripe public key not set.
     - Error: Removing item from bag failed, payment failure, product not found, failed to add product, checkout form not completed correctly,
         search box empty,  admin failed to update product. 
 
@@ -150,10 +150,10 @@
 
 #### Shopping Bag
 
--  produces a visual list of the items and quantity's entered by the users.
--  allows users to update or delete the order
--  a breakdown of costs per item and a grand total of all products.
--  a link to goto a 'checkout' section or continue shopping.
+-  Produces a visual list of the items and quantity's entered by the users.
+-  Allows users to update or delete the order
+-  A breakdown of costs per item and a grand total of all products.
+-  A link to goto a 'checkout' section or continue shopping.
 
 #### Checkout Section
 
@@ -161,17 +161,17 @@
 - A form that allows users to enter there delivery details.
 - User logged in will pre populate the form with the details stored in the profile form.
 - Anonymous users will be able register or login if they choose. Or continue without having to register.
-- logged in users can notify if the details entered should update there profile details.
+- Logged in users can notify if the details entered should update there profile details.
 - A payment system powered by stripe.
-- confirmatory button to complete the order or return to the shopping bag section.
+- Confirmatory button to complete the order or return to the shopping bag section.
 
 #### Future Features 
 
 - Facility for users to log in via existing social media accounts. 
-- contact form for queries.
-- review page for users.
+- Contact form for queries.
+- Review page for users.
 - News section that will email existing customers new products.
-- display images via URL.
+- Display images via URL.
 - Slide show of images or more images in the product detail view.
 
 [Back to Table of contents](#table-of-contents)
@@ -179,60 +179,75 @@
 ---
 ## <u>Technology Used</u>
 
+### IDE
 
-* [Django](https://www.djangoproject.com/)
+* [GitHub:](https://www.github.com.com)
+  - Used to store projects created in gitpod. 
 
-  - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design
-
-* [Amazon S3 via AWS](https://aws.amazon.com/)
-  
-  -  Object storage built to store and retrieve any amount of data from anywhere
-
-* [Heroku](https://www.heroku.com/)
-
-  - cloud platform for project deployment
+### Languages
 
 * [Python](https://www.python.org/)
-
   - programming language. Utilizing the following tools:
   - Pymongo used to link python with mongo DB
   - Werkzeug password hash and username.
 
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
-
   - Main Programming language
 
 * [CSS](https://en.wikipedia.org/wiki/CSS) 
-
   - Style sheet language
 
 * [JS](https://www.javascript.com/)
-
   - Used to create interactive functionality
 
 * [Jquery](https://jquery.com/)
-
   - JavaScript library
 
-* [Google Fonts:](https://fonts.google.com/)
+### Frameworks
 
+* [Django](https://www.djangoproject.com/)
+  - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design
+
+* [Bootstrap](https://getbootstrap.com)
+  - Bootstrap 4 used for responsive mobile first site.
+
+### Storage
+
+* [Amazon S3 via AWS](https://aws.amazon.com/)
+  -  Object storage built to store and retrieve any amount of data from anywhere
+
+* [Heroku](https://www.heroku.com/)
+  - cloud platform for project deployment
+
+### Database 
+
+* [Heroku Postgres](https://www.heroku.com/)
+  - Database used for deployment
+
+* [SQLite](https://www.sqlite.org)
+  - Database used in development
+
+### Payment Framework
+
+* [Stripe](https://stripe.com)
+  - Online payment processing for internet businesses
+
+### Tools and Editors
+
+* [Google Fonts:](https://fonts.google.com/)
   - Used to import custom fonts
 
 * [Icons:](https://fontawesome.com/) 
-
   - Used to import icons
 
-* [GitHub:](https://www.github.com.com)
-
-  - Used to store projects created in gitpod. 
-
 * [Gitpod:](https://www.gitpod.io.com)
-
-   - Used to develop the project, including version control (using commits and comments.)
+  - Used to develop the project, including version control (using commits and comments.)
  
 * [windows Photo editor](https://www.microsoft.com/en-us/p/photo-editor-for-windows-10/9mzwk7vt6b3g?activetab=pivot:overviewtab)
+  - Basic photo editor
 
-   - Basic photo editor
+* [Django Crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+
 
 [Back to Table of contents](#table-of-contents)
 
@@ -245,66 +260,66 @@ Below is final manual test regime conducted on the deployed site on Heroku to en
 ### User Not logged In
 - Navbar 
     - My account button correctly shows register and login
-    - login reveals a sign in page for username and password
-    - remember me button to store the details.
-    - home button returns to the home page.
-    - if valid credentials added to sign in then users is correctly logged in and toast message displayed.
-    - option to sign up for an account present that redirects to a sign up page.
-    - register/signup page form correct and works as intended.
+    - Login reveals a sign in page for username and password
+    - Remember me button to store the details.
+    - Home button returns to the home page.
+    - If valid credentials added to sign in then users is correctly logged in and toast message displayed.
+    - Option to sign up for an account present that redirects to a sign up page.
+    - Register/signup page form correct and works as intended.
 
-    - checkout bag takes direct to shopping bag. The value is responsive if items added or removed.
-    - search box present and button correct
+    - Checkout bag takes direct to shopping bag. The value is responsive if items added or removed.
+    - Search box present and button correct
     - On mobile the search button opens up the search bar in a drop down menu
     - On mobile a hamburger menu is present for the relevant categories.
-    - search button correct and filter as desired.
+    - Search button correct and filter as desired.
     - GOTO SHOP button links directly to the property pages
 
 - Footer 
     - All links open there relative pages in a new tab.
 
 - Search Section
-  - all product selection options correctly filter as intended and return the desired product views.
-  - dropdown selection on products show correctly
+  - All product selection options correctly filter as intended and return the desired product views.
+  - Dropdown selection on products show correctly
   - Product filters collapse to a hamburger menu on mobile view and work correctly
-  - sort by filter works as intended
+  - Sort by filter works as intended
 
 - Products page
-  - displayed as intended or filtered. Number of products on page depends on screen size, scales from between 1 and 4 products. Images and product details clearly visible. If no Image a stock 'no photo' picture present.
-    placeholder image.
+  - The products are displayed as intended and sorted according to the users selection. The number of products on page depends on screen size, scales from between 1 and 4 products. Images and product details clearly visible. 
+  - If no Image a stock a 'no photo' picture present.
   - No access to edit or delete option meant for the admins.
 
 - Product information page.
-  - large image present as well as product details with a expanded description.
-  - quantity buttons present to increase or decrease the amount with a visible count in the middle. 
-  - product limit is set between 1 and 99.  Use of buttons to go outside of this range is not possible. Manually putting in a number that is not in 
+  - Large image present as well as product details with a expanded description.
+  - Quantity buttons present to increase or decrease the amount with a visible count in the middle. 
+  - Product limit is set between 1 and 99.  Use of buttons to go outside of this range is not possible. Manually putting in a number that is not in 
   this range brings a pop up error
-  - keep shopping button links back to the product page.
-  - add to bag button correctly adds the selected quantity of the product to the bag. A Success toast message at top right appears with the correct product with a link to goto a secure checkout. Toast dismiss button works correctly, and link to checkout takes to the checkout page.
-  - works as expected in all device views.
-  - adding multiple different items works as intended. checkout total changes accordingly.
+  - Keep shopping button links back to the product page.
+  - Add to bag button correctly adds the selected quantity of the product to the bag. A Success toast message at top right appears with the correct product with a link to goto a secure checkout. Toast dismiss button works correctly, and link to checkout takes to the checkout page.
+  - Works as expected in all device views.
+  - Adding multiple different items works as intended. checkout total changes accordingly.
   
 - Shopping Bag
   - List of products added to the bag is present with price and quantity shown correctly and then a subtotal for each product.
-  - quantity button present which works in same was as the add product.  Addition buttons of Update and remove buttons present. 
-  - update button changes the quantity correctly and sub total changes. A success toast appears updated in the bag.
-  - remove button correctly removes that product from the list regardless of the quantity. A toast success present stating the product has been removed.
+  - Quantity button present which works in same was as the add product.  Addition buttons of Update and remove buttons present. 
+  - Update button changes the quantity correctly and sub total changes. A success toast appears updated in the bag.
+  - Eemove button correctly removes that product from the list regardless of the quantity. A toast success present stating the product has been removed.
   - Product grand total present at bottom of screen which correctly shows the amounts. 
   - Keep shopping button which return to the products page
   - Secure checkout button that directs to the checkout page. 
 
 - Checkout 
-  - a form is present with fields to capture name, email and delivery address.
-  - correct order summary shown.
-    - required fields work as intended and are not allowed to be left blank. valid email required.
-  - option to create an account to save order information.  
+  - A form is present with fields to capture name, email and delivery address.
+  - Correct order summary shown.
+    - Required fields work as intended and are not allowed to be left blank. valid email required.
+  - Option to create an account to save order information.  
   - Users can remain anonymous.
   - payments card area.
-  - adjust bag button redirect back to shopping bag.
-  - complete order button processes the order if all required Fields completed.
+  - Adjust bag button redirect back to shopping bag.
+  - Complete order button processes the order if all required Fields completed.
 
-  - a confirmation page shows on completion of checkout form with the correct products and details entered by the user. A toast stating the order has been processed along with a order number.
+  - A confirmation page shows on completion of checkout form with the correct products and details entered by the user. A toast stating the order has been processed along with a order number.
   - In Django admin the order is present and correct.
-  - on stripe the webhooks are successful. Charge.succeeded and  Payment_intent.succeeded which verified that the order is in the database.
+  - On stripe the webhooks are successful. Charge.succeeded and  Payment_intent.succeeded which verified that the order is in the database.
   - During testing of the stripe webhook feature and form submission errors the following test was created and verified.
     - In the checkout/static/checkout/js/stripe_elements.js  File line 110 (form.submit();) was commented out/deleted. This would in effect prevent the checkout form being sent to the Django database correctly.  The webhook handler from stripe then correctly checked that the order was not in the database and created the order. This acts as a backup to ensure that orders are created successfully even if there is a failure in the form submission.
 
@@ -315,18 +330,18 @@ Below is final manual test regime conducted on the deployed site on Heroku to en
   - 
 
 - Log out
-  - session cookie is removed. No access to other features.
-  - toast message confirming 'you are now logged out'
+  - Session cookie is removed. No access to other features.
+  - Toast message confirming 'you are now logged out'
 
 - Profile Section.
-  - pressing takes you to the profile page
+  - Pressing takes you to the profile page
   - Displays the users name and the default delivery information which can be amend by the user. Pressing the Update information button does as it says..
   - Order history present and display correctly. Clicking on the order brings up a summary and notifies that this was a previous order.
 
 - Checkout
   - The procedure is the same as above for Not logged in users.  T
   - The form is now pre filled with the correct user deliver details
-  - the option to save the delivery details to the profile via a checkbox. 
+  - The option to save the delivery details to the profile via a checkbox. 
   
 ### Admin Logged In 
   All the above tests created.  The only additional features for admin is in regards to the adding, editing or deleting product's.
@@ -337,10 +352,10 @@ Below is final manual test regime conducted on the deployed site on Heroku to en
 
 - Product Management page 
   - Form 'required' sections working correctly
-  - adding images tested. Bug found with displaying URL only images. see issues found section. Adding images by choosing a file works correctly
-  - creating a product returns admin to the Product detail form and all info is displayed correctly. Navigating to the main product page and New item present.
+  - Adding images tested. Bug found with displaying URL only images. see issues found section. Adding images by choosing a file works correctly
+  - Creating a product returns admin to the Product detail form and all info is displayed correctly. Navigating to the main product page and New item present.
     item also present in database.
-  - cancel button direct back to product page.
+  - Cancel button direct back to product page.
   
 - Products Page
   - Extra buttons available of Edit and Delete.  
@@ -368,7 +383,7 @@ Below is final manual test regime conducted on the deployed site on Heroku to en
 
 ### Functionality testing
 
-- chrome Browser used to run Gitpod and developer tools used to test , solve problems, style and responsiveness.
+- Chrome Browser used to run Gitpod and developer tools used to test , solve problems, style and responsiveness.
 Chrome developer tools used to check compatibility during project and to check on consistency.
 
 - Mozilla Dev tools used to test in addition to chrome dev tools.    
@@ -393,7 +408,7 @@ and a Motorola  one+ mobile phone with no issues noted
 
 -  https://validator.w3.org/
 
-    -  passes except for script type="text/javascript".  I have left these unchanged for legacy browsers.
+    -  Passes except for script type="text/javascript".  I have left these unchanged for legacy browsers.
 
 -  https://wave.webaim.org/ - A web accessibility checker
 
@@ -413,20 +428,20 @@ and a Motorola  one+ mobile phone with no issues noted
     - It is evident what the e-commerce site is selling
   - For the site to be useable on different devices
     - Responsive for all device sizes
-  - to learn more about the company and its history.
+  - To learn more about the company and its history.
     - A brief section about the company present on the home page
-  - to view a catalog of products the company is selling
+  - To view a catalog of products the company is selling
     - A functional product page present that allows users to view them in more detail if required.
-  - ability to add products to a shopping bag 
+  - Ability to add products to a shopping bag 
     - A shopping bag is present and products can be added, updated or removed from this bag.
 
-  - ability to increase or decrease the items in the shopping bag.
+  - Ability to increase or decrease the items in the shopping bag.
     - Product quantity can be altered as desired between a set minimum and maximum (1-99)
-  - ability to remove items.
+  - Ability to remove items.
     - Remove item from Bag option present.
-  - a system to purchase the items securely
+  - A system to purchase the items securely
     - This is made available via Stripe which is a 3rd party payment system.
-  - to receive confirmation via onscreen prompts and also Emails.
+  - To receive confirmation via onscreen prompts and also Emails.
     - Toast Notification are present to further confirm the users actions. Personal emails can also be sent in regards to the account options (registration/ lost passwords etc.)  In addition an order confirmation is sent to the users designated email address with an order summary.
   - To be able to register so my details are stored for future purposes.
     - A full built in accounts system via django auth is included in the site. This contains many pre installed services like login and logout to name a few.
@@ -437,7 +452,7 @@ and a Motorola  one+ mobile phone with no issues noted
     - This is Present.
   - To recover my password if forgotten
     - Password recovery via email is included via the built in django services
-  - be able to view and edit my details 
+  - Be able to view and edit my details 
     - This has been included in the profile section.
   - A system to see my previous orders and contents.
     - This is also included in the users profile section and a list is available of past order. Selecting an order link will bring up the order summary similar to the confirmation of order email.
@@ -449,9 +464,9 @@ and a Motorola  one+ mobile phone with no issues noted
 
   - To showcase the products the company makes and sells.
     - A responsive product page is present which contains the company's products it sells. 
-  - to be able to edit and delete products.
+  - To be able to edit and delete products.
     - Admins are able to update and delete existing products.
-  - to be able to add new products.
+  - To be able to add new products.
     - A product management page present that allows the admin to add additional products.
   - I want users to be able to make purchases safely and securely
     - Stripe payment method has been included in the checkout section of the website, this has its own built in security features.
@@ -468,13 +483,16 @@ and a Motorola  one+ mobile phone with no issues noted
 
   - I have used [Lighthouse](https://developers.google.com/web/tools/lighthouse/) for the performance testing. No relevant errors present. Screen shots of the result are shown below.
 
-#### Desktop performance
-
-![Performance desktop](media/readme_files/c-f-desktop-LH.png)
-
-#### Mobile Performance
-
-![Performance mobile](media/readme_files/c-f-mobile-LH.png)
+<details>
+  <summary>Performance desktop</summary>
+  <img src="media/readme_files/c-f-desktop-LH.png">
+</details>  
+<p>&nbsp;</p>
+<details>
+  <summary>Performance Mobile</summary>
+  <img src="media/readme_files/c-f-mobile-LH.png">
+</details>
+<p>&nbsp;</p>
 
 
 [Back to Table of contents](#table-of-contents)
@@ -490,7 +508,7 @@ A full walk-through from github is available here [cloning a repository](https:/
 
 - Once cloned in the command terminal type:
 
-- touch gitignore (if not present) and add the following:
+- Touch gitignore (if not present) and add the following:
 
       env.py
       --pycache--/
