@@ -4,7 +4,7 @@
 
 ## <u>Screenshots</u>
 
-![screenshots](static/readme-docs/Preview.png) 
+![screenshots](media/readme_files/amiresponsive.png) 
 
 ## A Python and Data Centric Development Project
 
@@ -116,8 +116,6 @@
 
 - On mobile view the search categories are available as a Hamburger Drop down menu
 
-
-
 #### Hero Image
 
 - Fixed image wood workshop.
@@ -165,11 +163,15 @@
 - A payment system powered by stripe.
 - Confirmatory button to complete the order or return to the shopping bag section.
 
+### Database Schema
+
+![Database Schema](media/readme_files/Database_schema.png)
+
 #### Future Features 
 
 - Facility for users to log in via existing social media accounts. 
 - Contact form for queries.
-- Review page for users.
+- Ability for users to leave reviews of products, linked to that product. This would show in the product detail page where you can view all reviews. The average rating would be displayed and updated.
 - News section that will email existing customers new products.
 - Display images via URL.
 - Slide show of images or more images in the product detail view.
@@ -233,6 +235,9 @@
   - Online payment processing for internet businesses
 
 ### Tools and Editors
+
+* [AmI.Responsive](http://ami.responsivedesign.is/)
+  - Used to create Screenshots on various device types.
 
 * [Google Fonts:](https://fonts.google.com/)
   - Used to import custom fonts
@@ -302,7 +307,7 @@ Below is final manual test regime conducted on the deployed site on Heroku to en
   - List of products added to the bag is present with price and quantity shown correctly and then a subtotal for each product.
   - Quantity button present which works in same was as the add product.  Addition buttons of Update and remove buttons present. 
   - Update button changes the quantity correctly and sub total changes. A success toast appears updated in the bag.
-  - Eemove button correctly removes that product from the list regardless of the quantity. A toast success present stating the product has been removed.
+  - Remove button correctly removes that product from the list regardless of the quantity. A toast success present stating the product has been removed.
   - Product grand total present at bottom of screen which correctly shows the amounts. 
   - Keep shopping button which return to the products page
   - Secure checkout button that directs to the checkout page. 
@@ -478,6 +483,8 @@ and a Motorola  one+ mobile phone with no issues noted
   - During the deployment of the project to Heroku, Gitpod has changed the installed apps that show in the requirements.txt.  This has caused Over 100+ entries into the req's file. In addition to this upon restart of the gitpod repository several apps require to be reinstalled each time via a terminal. However once this is done the site runs correctly on gitpod.  Testing has shown that this causes no issues with heroku (albeit a rather large Req's file.).  I was left with several options from cloning the repo to creating a new branch.  This possibly could effect the continuity of the course material, So I have decided to leave the changes made by gitpod. To minimize the impact I created a copy of the actual required Requirements.txt file (named _copy),  and also a separate file of the dependencies that I need to reinstall every time the gitpod server is started.  This is a simple terminal command of "pip3 install -r reinstall.txt" . Although not ideal, at so close to submission deadline, with no other adverse effects present this was my safest option and the deployment via Heroku appears to be un-affected. 
 
   - During testing I found that it was not possible to display product images by the URL field in the form. I tried several remedies to fix,  Extra elif fields in the product view to name one.  Due to time constraints I decided to remove this from the form. This was done by removing the respective product field in the products.models.py file. No impact on the website other than that field no longer present and the Django database changed to reflect this. Migrations made as a result. 
+
+  - Found indoor_chairs category was not the same as the database category of indoor_chair. This meant that these products would not show when filtered. Code altered to match the database. 
 
 ### Performance testing
 
